@@ -1,0 +1,310 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+@font-face {
+    font-family: FiraSansB;
+    src: url(fonts/FiraSans-Bold.otf);
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasNeue.otf);
+}
+@font-face {
+    font-family: Rage;
+    src: url(fonts/RAGE.TTF);
+}
+@font-face {
+    font-family: RockWell;
+    src: url(fonts/ROCKB.TTF);
+}
+
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family:FiraSansB;
+  background-color:#dc4348;
+}
+td{
+	padding-bottom:20px;
+}
+.img-square{
+	filter:blur(1px) grayscale(100%);
+	transition: all 0.5s ease-in-out;
+}
+.img-square:hover{
+	filter:none;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.btn-custom{
+	background-color:#ed1c24;
+	color:white;
+	width:100%;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.nav{
+	font-family:FiraSansB;
+}
+#navbar{
+	margin-top:10px;
+}
+#navitem{
+}
+.navbar-brand{
+	position:absolute;
+	/*left:40%;*/
+	margin-top:-20px;
+}
+.navbar-brand2{
+	position:absolute;
+	left:-20%;
+	margin-top:-20px;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-default{
+	background-color:#662801;
+	border-color:#662801;
+	color:#ffffff;
+	box-shadow:0px 0px 25px black;
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #eada00;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #eada00;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #eada00;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #eada00;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 560px ;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 560px ;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 560px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#menu{
+	transition: all .2s ease-in-out;
+}
+#menu:hover{
+	transform: scale(1.2);
+}
+
+/* Featurettes
+------------------------- */
+.marketing{
+	background-color:#dcdcdc;padding:20px;
+}
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.orders{
+	background-color:#dcdcdc;
+}
+#ordersList{
+	height:200px;
+	border-radius:5px;
+	overflow-y:scroll;
+	background-color:white;
+}
+footer{
+	background-color:#dc4348;
+	height:100px;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+	color:white;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+.navbar-brand{display:hidden;}
+}
+#rotate{
+	color:white;
+	font-family:BebasNeue;
+	text-align:center;
+	font-size:3em;
+	margin-bottom:20%;
+}
+@media(max-width:767px){
+	#myCarousel{
+		height:200px;
+	}
+	.carousel{
+		height:200px;
+	}
+	.carousel-inner{
+		height:200px;
+	}
+	.carousel-inner .item img{
+		height:200px;
+	}
+	.item{
+		height:200px;
+	}
+}
+@media (min-width: 992px) {
+	 .navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  #myCarousel{
+		height:400px;
+	}
+	.carousel{
+		height:400px;
+	}
+	.carousel-inner{
+		height:400px;
+	}
+	.item{
+		height:400px;
+	}
+	.carousel-inner .item img{
+		height:400px;
+	}
+}
+@media (max-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+   #myCarousel{
+		height:300px;
+	}
+	.carousel{
+		height:300px;
+	}
+	.carousel-inner{
+		height:300px;
+	}
+	.item{
+		height:300px;
+	}
+	.carousel-inner .item img{
+		height:300px;
+	}
+  
+}
